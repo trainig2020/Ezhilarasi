@@ -8,11 +8,12 @@
 </head>
 <body>
 <h1>Congratulation</h1>
-<%-- <h2>${header}</h2> --%>
+<h2>${headerMsg}</h2>
 
 <h3> Details Submitted by you :</h3>
 StudentName : ${student.studentName}<br>
 Age :${student.age}<br>
+StudentHobby : ${student.studentHobby}<br>
 StudentNumber :${student.mobileNo}<br>
 DOB :${student.dob}<br>
 StudentSkills : ${student.skills}<br>

@@ -9,12 +9,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%-- <h2>${header}</h2> --%>
+	<h2>${headerMsg}</h2>
 	<form:errors path="student.*" />
 	<form action="submit" method="post">
 
 		StudentName : <input type="text" name="studentName"><br>
 		StudentAge : <input type="text" name="age"><br>
+		StudentHobby : <input type="text" name="studentHobby"><br>
 		StudentNumber : <input type="text" name="mobileNo"><br>
 		StudentDOB : <input type="text" name="dob"><br>
 		StudentSkills : <select name="skills" multiple>

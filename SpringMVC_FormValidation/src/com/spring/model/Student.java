@@ -8,6 +8,8 @@ import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import com.spring.controller.IsValidHobby;
+
 
 
 public class Student {
@@ -15,12 +17,18 @@ public class Student {
 	@Size(min = 10, max = 30)
 	@Pattern(regexp="[^0-9]*")
 	private String studentName;
+	
 	private int age;
+	/*@IsValidHobby(listOfHobbies="Music|Dance|Sports")*/
+	@IsValidHobby()
+	private String studentHobby;
 	
 	@Max(2222)
 	private long mobileNo;
+	
 	@Past
 	private Date dob;
+	
 	private List<String> skills;
 
 	private Address address;
@@ -39,6 +47,14 @@ public class Student {
 
 	public void setAge(int age) {
 		this.age = age;
+	}
+
+	public String getStudentHobby() {
+		return studentHobby;
+	}
+
+	public void setStudentHobby(String studentHobby) {
+		this.studentHobby = studentHobby;
 	}
 
 	public long getMobileNo() {

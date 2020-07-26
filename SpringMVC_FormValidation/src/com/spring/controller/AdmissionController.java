@@ -61,7 +61,7 @@ public class AdmissionController {
 	//Model Attribute in Method level
 	@ModelAttribute
 	public void addComments(Model model){
-		model.addAttribute("header", "Sona College of Tech");
+		model.addAttribute("headerMsg", "Sona College of Tech");
 	}
 
 }
